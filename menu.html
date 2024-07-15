@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>Menu | Dine In</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./globalStyles.css">
+  <link rel="stylesheet" href="./components.css">
+  <!-- aos library css  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Add your custom css -->
+  <link rel="stylesheet" href="./menu.css">
+</head>
+
+<body>
+
+  <!-- Nav Section -->
+  <div class="nav">
+    <div class="container">
+      <div class="nav__wrapper">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="Dine In">
+        </a>
+        <nav>
+          <div class="nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu">
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </div>
+          <div class="nav__bgOverlay"></div>
+          <ul class="nav__list">
+            <div class="nav__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <div class="nav__list__wrapper">
+
+              <li><a class="nav__link" href="./index.html">Home</a></li>
+                <li><a class="nav__link" href="./menu.html">Menu</a>
+                  <ul id="submenu">
+                    <li><a href="#soup">Soups</a></li>
+                    <li><a href="#salad">Salads</a></li>
+                    <li><a href="#vpizza">Veg Pizza</a></li>
+                  </ul> 
+              </li>
+              <li><a class="nav__link" href="./about.html">About</a></li>
+              <li><a class="nav__link" href="./contact.html">Contact</a></li>
+              <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- End Nav Section -->
+  <!-- page Title -->
+  <section id="page__title" data-aos="fade-up">
+    <div class="container">
+      <h2 class="page__title__text">
+        Explore Our Menu
+      </h2>
+    </div>
+  </section>
+  <!-- Our Specials -->
+  <section id="ourSpecials" data-aos="fade-up">
+    <div class="container">
+      <h3 class="ourSpecials__title">Our Specials</h3>
+      <div class="ourSpecials__wrapper">
+        <div class="ourSpecials__item">
+          <div class="ourSpecials__item__img">
+            <img src="./images/ourspeacial_1.avif" alt="food img">
+          </div>
+          <div class="ourSpecials__item__info">
+            <h3 class="ourSpecials__item__title">
+              Tomato Bruschetta
+            </h3>
+            <h4 class="ourSpecials__item__price">₹285</h4>
+            <div class="ourSpecials__item__desc">
+              <p>Toasted ciabatta bread slices with garlic and fresh basil, topped with tomato cubes marinated in Italian herbs and olive oil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ourSpecials__item">
+          <div class="ourSpecials__item__img">
+            <img src="https://img.freepik.com/free-photo/salad-with-chicken-chunks-served-plate-closeup_1220-7006.jpg?size=626&ext=jpg&ga=GA1.1.1280416473.1692804796&semt=ais" alt="food img">
+          </div>
+          <div class="ourSpecials__item__info">
+            <h3 class="ourSpecials__item__title">
+              Rocket Salad
+            </h3>
+            <h4 class="ourSpecials__item__price">₹395</h4>
+            <div class="ourSpecials__item__desc">
+              <p>Rocket leaf, iceberg lettuce, black olives and garlic mixed in lemon, olive oil and parmesan on top.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Our Specials -->
+  <!-- Top Dishes -->
+  <section id="dishGrid" data-aos="fade-down">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Top Dishes
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/pizza-food-food_144627-38482.jpg?size=626&ext=jpg&ga=GA1.1.1280416473.1692804796&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Chilli Garlic Pizza
+            </h3>
+            <h3 class="dishGrid__item__price">₹575</h3>
+            <div class="dishGrid__item__desc">
+              <p>A bold and spicy pizza with zesty red chilli oil, finely chopped green chilli, onion, sliced green pepper and cheese.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/pan-pasta-with-tomato-sauce-basil-top_1340-25539.jpg?size=626&ext=jpg&ga=GA1.1.1280416473.1692804796&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Florence Tomato
+            </h3>
+            <h3 class="dishGrid__item__price">₹545</h3>
+            <div class="dishGrid__item__desc">
+              <p>A timeless classic tomato sauce made with fresh tomatoes, onion, garlic, Italian herbs & spices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/premium-photo/chocolate-pudding-brown-cup-plastic-with-spoon-isolated-white-background_756748-46682.jpg?size=626&ext=jpg&ga=GA1.1.1280416473.1692804796&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Chocolate Mousse
+            </h3>
+            <h3 class="dishGrid__item__price">₹265</h3>
+            <div class="dishGrid__item__desc">
+              <p>A simple yet elegant dark chocolate mousse made with chocolate, fresh cream & milk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Top Dishes -->
+  <!-- Soup Dishes -->
+  <div class="soup" id="soup"></div>
+  <section id="dishGrid" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Soups
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/top-view-winter-tomato-soup-bowl-with-tomatoes_23-2148706359.jpg?size=626&ext=jpg&ga=GA1.2.1280416473.1692804796&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Zuppa Di Pomodoro -Tomato Soup
+            </h3>
+            <h3 class="dishGrid__item__price">₹295</h3>
+            <div class="dishGrid__item__desc">
+              <p>Tomato-based soup with herbs, garlic, and rich, comforting flavors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/view-delicious-food-table_23-2149629080.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Zuppa Di Fungi -Mushroom Soup
+            </h3>
+            <h3 class="dishGrid__item__price">₹295</h3>
+            <div class="dishGrid__item__desc">
+              <p>Rich Italian mushroom soup with earthy flavors and velvety texture.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/delicious-green-homemade-broccoli-cream-soup_114579-64588.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Crema Di Broccoli -Broccoli Soup
+            </h3>
+            <h3 class="dishGrid__item__price">₹295</h3>
+            <div class="dishGrid__item__desc">
+              <p>Creamy broccoli puree with broth, cream, and optional flavorful toppings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Soup Dishes -->
+  <!-- Salads Dishes -->
+  <div class="salad" id="salad"></div>
+  <section id="dishGrid" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Salads
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/fresh-salad-with-vegetables-tomatoes-red-onions-lettuce-quail-eggs-healthy-food-diet-concept-vegetarian-food_2829-20246.jpg?size=626&ext=jpg&ga=GA1.2.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Caesar Salad
+            </h3>
+            <h3 class="dishGrid__item__price">₹350</h3>
+            <div class="dishGrid__item__desc">
+              <p>Fresh Iceberg lettuce ans croutons mixed with mayonnaise dressing, olive oil and parmesan on top.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/top-view-fresh-salad-dark-plate_23-2148537186.jpg?size=626&ext=jpg&ga=GA1.2.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Rocket Salad
+            </h3>
+            <h3 class="dishGrid__item__price">₹350</h3>
+            <div class="dishGrid__item__desc">
+              <p>Rocket leaf, iceberg lettuce, black olives and garlic mixed in lemon, olive oil and parmesan on top.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/verhead-shot-salad-with-tomatoes-sun-dried-tomatoes-avocado-spinach-turkey-sesame-top_181624-20916.jpg?size=626&ext=jpg&ga=GA1.2.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Avocado Salad
+            </h3>
+            <h3 class="dishGrid__item__price">₹400</h3>
+            <div class="dishGrid__item__desc">
+              <p>Avocado, pineapple cubes, cherry tomatoes, black olives & toasted sesame seeds with orange vinaigrette dressing on a bed of lettuce.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/top-view-delicious-vegetable-salad-with-various-ingredients-black-cutting-board_179666-47274.jpg?size=626&ext=jpg&ga=GA1.2.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Exotic Salad 
+            </h3>
+            <h3 class="dishGrid__item__price">₹275</h3>
+            <div class="dishGrid__item__desc">
+              <p>Mixed salsd leaves iceberg lettuce romaine lettuce and rocket leaf with assorted vegetables, mixed pepper in olive oil dressing with pineapple cubes
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/watermelon-salad-white-plate_144627-20855.jpg?size=626&ext=jpg&ga=GA1.2.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Feta & Watermelon Salad
+            </h3>
+            <h3 class="dishGrid__item__price">₹350</h3>
+            <div class="dishGrid__item__desc">
+              <p>Crumbled feta cheese, fresh watermelom cubes mixed with rocket leaves, drizzled with balsamic dressing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Salads Dishes -->
+  <!-- Veg-pizza Dishes -->
+  <div class="vpizza" id="vpizza"></div>
+  <section id="dishGrid" data-aos="fade-up">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Veg Pizza
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/pizza-food-food_144627-38482.jpg?size=626&ext=jpg&ga=GA1.1.1280416473.1692804796&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Chilli Garlic Pizza
+            </h3>
+            <h3 class="dishGrid__item__price">₹575</h3>
+            <div class="dishGrid__item__desc">
+              <p>A bold and spicy pizza with zesty red chilli oil, finely chopped green chilli, onion, sliced green pepper and cheese.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/hawaiian-pizza-with-pineappleham-cheese-isolated-white-background_123827-20906.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Palermo Pineapple
+            </h3>
+            <h3 class="dishGrid__item__price">₹555</h3>
+            <div class="dishGrid__item__desc">
+              <p>A succulent bed of tomato sauce covered with cheddar, mozzarella, cherry tomatoes, cottage cheese and fresh pineapple cubes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Tuscan Spicy Tomato
+            </h3>
+            <h3 class="dishGrid__item__price">₹585</h3>
+            <div class="dishGrid__item__desc">
+              <p>Pizza topped with freshly sliced tomato rings, green peppers, onion, garlic, and a touch of chilli and cheese.</p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/pizza-with-extra-cheese-dried-herbs_141793-339.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Roma Supreme 
+            </h3>
+            <h3 class="dishGrid__item__price">₹645</h3>
+            <div class="dishGrid__item__desc">
+              <p>Supreme range pizza packed with black olives, red hot paprika, green peppers, golden corn, onion and cheese.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/vegetable-based-pizza-with-white-cheese-cherries_114579-1959.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Pepper Paneer
+            </h3>
+            <h3 class="dishGrid__item__price">₹645</h3>
+            <div class="dishGrid__item__desc">
+              <p>Packed with freshly cubed paneer, fine sliced green peppers and onion, on a bed of cheddar and mozzarella, topped with black olives.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="https://img.freepik.com/free-photo/mushroom-pizza-with-tomato-sauce-served-round-bamboo-board_114579-1908.jpg?size=626&ext=jpg&ga=GA1.1.176855812.1693150666&semt=ais" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Pizza Calabrese
+            </h3>
+            <h3 class="dishGrid__item__price">₹695</h3>
+            <div class="dishGrid__item__desc">
+              <p>Feta cheese & caramelized onions on top of broccoli, red paprika, black olives & fresh onions over classic cheese & tomato base.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Veg-pizza Dishes -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__col1">
+          <div class="footer__logo">
+            <img src="./images/logo.png" alt="Dine In">
+          </div>
+          <p class="footer__desc">
+            Fresh and delicious traditional Italian food to delight the whole family.
+          </p>
+          <div class="footer__socials">
+            <h4 class="footer__socials__title">Follow us</h4>
+            <ol class="footer__socials__list">
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-twitter">
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                  </svg>
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="footer__col2">
+          <h3 class="footer__text__title">
+            Links
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="./menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="./booking.html">Book Table</a>
+            </li>
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer__col3">
+          <h3 class="footer__text__title">
+            Support
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Support Center</a>
+            </li>
+            <li>
+              <a href="#">Feedback</a>
+            </li>
+          </ol>
+        </div>
+        <div class="footer__col4">
+          <h3 class="footer__text__title">
+            Contact
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#">+918867490660</a>
+            </li>
+            <li>
+              <a href="#">infodinein@gmail.com</a>
+            </li>
+            <li>
+              <a href="#">R R Nagar, Bengaluru</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="copyright">
+    <div class="container">
+      <p class="copyright__text">
+        © copyright 2023 Dine In | All rights reserved
+      </p>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- custom script -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
